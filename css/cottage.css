@@ -1,0 +1,67 @@
+.hero.hero-small {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #f8f6f2;
+}
+
+.cottage-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.cottage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.cottage-item {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.cottage-item h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: var(--charcoal);
+}
+
+.cottage-item ul {
+  padding-left: 1rem;
+}
+
+.cottage-hours {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.cottage-hours h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+}
+
+.cottage-intro {
+  background-color: #fff;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cottage-intro-text h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--charcoal);
+}
+
+.cottage-intro-text p {
+  font-size: 1rem;
+  color: var(--charcoal);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}

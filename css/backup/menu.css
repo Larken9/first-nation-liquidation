@@ -1,0 +1,107 @@
+.menu-section {
+  background-color: var(--beige);
+  position: relative;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.menu-overlay {
+  background: url("assets/first_nation_icon_only.webp") center center no-repeat;
+  background-size: 60%;
+  opacity: 0.04;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.menu-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.menu-content h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.2rem;
+  color: var(--charcoal);
+  margin-bottom: 2rem;
+}
+
+.menu-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.menu-tabs .tab {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.menu-tabs .tab:hover,
+.menu-tabs .tab.active {
+  background: var(--charcoal);
+}
+
+.menu-category {
+  display: none;
+  text-align: left;
+}
+
+.menu-category.active {
+  display: block;
+}
+
+.menu-category h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  color: var(--charcoal);
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+}
+
+.menu-item {
+  margin-bottom: 1.5rem;
+}
+
+.menu-item h4 {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Oswald", sans-serif;
+  color: var(--charcoal);
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.menu-item p {
+  font-family: "Lato", sans-serif;
+  color: var(--charcoal);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.grill-hours {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2rem;
+  color: var(--accent);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

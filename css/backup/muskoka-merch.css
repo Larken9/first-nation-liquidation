@@ -1,0 +1,188 @@
+/* ==========================
+   Muskoka Merch Page Styles
+   ========================== */
+
+/* Intro Section */
+.merch-intro {
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+}
+
+.merch-intro h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.25rem;
+  color: var(--charcoal);
+}
+
+.merch-intro h2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--charcoal);
+}
+
+.merch-intro .sub {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--charcoal);
+}
+
+.merch-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 👈 3 fixed columns */
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px; /* Limit width */
+  margin: 0 auto;
+}
+
+.merch-gallery img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.merch-gallery img:hover {
+  transform: scale(1.03);
+}
+
+.merch-gallery img:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 900px) {
+  .merch-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .merch-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Wampum Belt Section */
+.wampum-belt {
+  background: #f8f6f2;
+  padding: 4rem 2rem;
+}
+
+.wampum-title {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 0.25rem;
+  color: var(--charcoal);
+}
+
+.wampum-sub {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: var(--charcoal);
+}
+
+.wampum-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.wampum-description {
+  flex: 1 1 300px;
+  max-width: 500px;
+  font-size: 0.95rem;
+  color: var(--charcoal);
+  line-height: 1.6;
+}
+
+.wampum-image {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.wampum-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Novelties */
+.merch-novelties {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.novelty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  padding-top: 1.5rem;
+}
+
+.novelty-grid img {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Featured Image */
+.merch-feature {
+  padding: 3rem 2rem;
+  text-align: center;
+  max-width: 700px; /* You can adjust this to your liking */
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.merch-feature img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .wampum-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .merch-intro h1 {
+    font-size: 2rem;
+  }
+
+  .merch-intro h2 {
+    font-size: 1rem;
+  }
+}
+
+.merch-feature-slider {
+  max-width: 600px;
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 12px;
+  position: relative;
+  aspect-ratio: 4 / 3; /* ⬅ Adds fixed aspect ratio */
+}
+
+.slider-track {
+  display: flex;
+  width: 100%;
+  transition: transform 0.6s ease-in-out;
+}
+
+.slider-track img {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* ⬅ Prevents stretching */
+  border-radius: 12px;
+  object-fit: contain;
+  border-radius: 12px;
+}
