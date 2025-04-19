@@ -49,31 +49,42 @@
       </div>
       
 
-    <header class="split-nav">
-      <nav class="nav-left">
-        <a href="about.html">About FNL</a>
-        <a href="muskoka-merch.html">Muskoka Merch</a>
-        <a href="fireworks.html">Fireworks</a>
-        <a href="for-the-cottage.html">For the Cottage</a>
-      </nav>
+      <header class="split-nav">
+        <div class="mobile-nav-toggle" id="mobileToggle">
+          <span></span><span></span><span></span>
+        </div>
 
-      <div class="logo-center">
-        <a href="index.html">
-          <img
-            src="assets/first_nation_icon_only.webp"
-            alt="First Nation Liquidation Logo"
-          />
-        </a>
-        <h1>First Nation<br /><span>LIQUIDATION</span></h1>
-      </div>
+        <div class="mobile-drawer" id="mobileDrawer">
+          <a href="about.html">About FNL</a>
+          <a href="muskoka-merch.html">Muskoka Merch</a>
+          <a href="fireworks.html">Fireworks</a>
+          <a href="for-the-cottage.html">For the Cottage</a>
+          <a href="longhouse-grill.html">Longhouse Grill</a>
+          <a href="humidor.html">Humidor/Smoke</a>
+          <a href="loyalty-cards.html">Loyalty Cards</a>
+          <a href="contact.html">Contact</a>
+        </div>
 
-      <nav class="nav-right">
-        <a href="longhouse-grill.html">Longhouse Grill</a>
-        <a href="humidor.html">Humidor/Smoke</a>
-        <a href="loyalty-cards.html">Loyalty Cards</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
+        <nav class="nav-left">
+          <a href="about.html">About FNL</a>
+          <a href="muskoka-merch.html">Muskoka Merch</a>
+          <a href="fireworks.html">Fireworks</a>
+          <a href="for-the-cottage.html">For the Cottage</a>
+        </nav>
+        <div class="logo-center">
+          <a href="index.html">
+            <img src="assets/first_nation_icon_only.webp" alt="FNL Logo" />
+          </a>
+          <h1>First Nation<br /><span>LIQUIDATION</span></h1>
+        </div>
+        <nav class="nav-right">
+          <a href="longhouse-grill.html">Longhouse Grill</a>
+          <a href="humidor.html">Humidor/Smoke</a>
+          <a href="loyalty-cards.html">Loyalty Cards</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+      
 
     <section class="hero">
       <h1>Tax-Free Deals on Cigarettes, Fireworks & More</h1>
@@ -159,5 +170,17 @@
             </a>
           </div>
     </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.getElementById('mobileToggle');
+        const drawer = document.getElementById('mobileDrawer');
+    
+        toggle.addEventListener('click', () => {
+          drawer.classList.toggle('open');
+        });
+      });
+    </script>
+
   </body>
 </html>
