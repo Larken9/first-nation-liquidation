@@ -1,3 +1,13 @@
+/* Global reset */
+body {
+  background: #f8f5f0;
+  font-family: "Lato", sans-serif;
+  color: #222;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+/* Sections */
 .section {
   padding: 3rem 2rem;
   text-align: center;
@@ -13,43 +23,145 @@
 
 .product {
   background: white;
-  border: 1px solid var(--charcoal);
-  padding: 1rem;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
   max-width: 300px;
   width: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 .product img {
   width: 100%;
   height: auto;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
+.product h3 {
+  font-family: "Oswald", sans-serif;
+  margin-top: 1rem;
+}
+
+.product p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Hero section */
 .hero {
-  background-color: #a89f8f; /* Warm earthy tone for contrast */
-  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/firstnation-hero.webp") center/cover no-repeat;
+  color: #fff;
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 12rem 2rem;
+  background-attachment: fixed;
 }
 
 .hero h1 {
   font-family: "Oswald", sans-serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .hero p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 400;
-  color: #f1f1f1;
+  color: #eee;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
 }
 
-/* Responsive layout for cards */
+/* Footer */
+.site-footer {
+  background: #2d2d2d;
+  color: #ddd;
+  padding: 4rem 2rem 2rem;
+}
+
+.footer-location {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.footer-text {
+  max-width: 400px;
+}
+
+.footer-text h3 {
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.footer-text p {
+  margin: 0.5rem 0;
+}
+
+.footer-map iframe {
+  border-radius: 10px;
+  width: 100%;
+  height: 200px;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  margin-top: 2rem;
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-social .icon {
+  width: 24px;
+  height: 24px;
+  fill: #ddd;
+  transition: fill 0.3s;
+}
+
+.footer-social .icon:hover {
+  fill: #d95f26;
+}
+
+/* Virtual tour button */
+.virtual-tour {
+  background: #d95f26;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.virtual-tour:hover {
+  background: #bf4c1e;
+}
+
+/* Mobile drawer */
+.mobile-drawer {
+  background: #2d2d2d;
+}
+
+.mobile-drawer a {
+  color: #ddd;
+}
+
+/* Responsive layout */
 @media (max-width: 768px) {
   .products {
     flex-direction: column;
     align-items: center;
+  }
+  .footer-location {
+    flex-direction: column;
   }
 }
